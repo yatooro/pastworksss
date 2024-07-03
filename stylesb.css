@@ -1,0 +1,127 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #575757;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #001F3F, #002855);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+form {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #fff, #f2f2f2);
+    transition: background-color 0.3s ease;
+}
+
+table {
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-weight: normal;
+}
+
+th {
+    background-color: #f7f7f7;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.reset-button {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: linear-gradient(to bottom, #ff6347, #d40000);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.reset-button:hover {
+    background: linear-gradient(to bottom, #d40000, #a00000);
+}
+
+/* Styles for the starting balance button */
+
+input[type="number"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="submit"] {
+    background: linear-gradient(to bottom, darkblue, #002855);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to bottom, darkblue, #002855);
+    transform: scale(1.05);
+}
+
+/* Additional Animations */
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+form {
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

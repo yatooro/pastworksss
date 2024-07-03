@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgb(0, 139, 139), #b5c8dd);
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.left-side {
+    flex: 1;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.right-side {
+    flex: 2;
+    background-color: rgba(53, 53, 53, 0.308);
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label, form input, form select, form button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+form input, form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #001f3f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+/* Add more styling as needed */
